@@ -1,0 +1,27 @@
+<h1>
+    <a href="/shortener/stats" class="btn btn-primary pull-right">Statistiken</a>
+    URL Shortener
+</h1>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Systeminformationen</div>
+    <div class="panel-body">
+        Schlüssel-Wert-Paare in der Datenbank: 4 Millionen <br>
+        Größe der Datenbank auf der Festplatte: 340 MB <br>
+        Auslastung des Arbeitsspeichers: 760 MB
+    </div>
+</div>
+
+
+
+<form action="/shortener/create" method="post">
+    <div class="form-group">
+        <input type="text" name="url" id="url" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-success">Verkürzen!</button>
+</form>
+
+
+<pre style="font-size: 8px; margin-top: 20px;">
+https://www.google.de/search?q=((sqrt(cos(x))*cos(500*x)%2Bsqrt(abs(x))-0.4)*(4-x*x)%5E0.1&gws_rd=cr,ssl&ei=QvAsVaC5DNPLaLOLgaAG
+</pre>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.couchbase.client:core-io:1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.couchbase.client/core-io/1.0.0/d65b6614afb9fdb71b4e1caa6d6dd09edc0ea8df/core-io-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.couchbase.client/core-io/1.0.0/d552d2e4691e5a99da1f6c9d399f984ead80f0d9/core-io-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

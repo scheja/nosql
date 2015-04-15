@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hp.hpl.jena:arq:2.8.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hp.hpl.jena/arq/2.8.8/f4756fc8ae7a9ab1800efac8bf79d378b88a3910/arq-2.8.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hp.hpl.jena/arq/2.8.8/f378dc50598bf3d5a0a7df2916c6b75d3b55cc1b/arq-2.8.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

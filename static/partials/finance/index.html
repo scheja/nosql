@@ -1,0 +1,29 @@
+<h1>Finanzdaten</h1>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Systeminformationen</div>
+    <div class="panel-body">
+        <p class="">
+            Eine Tabelle mit 40 Millionen Einträgen der Form:
+            <pre>series_id, series_timestamp, series_value</pre>
+            also beispielsweise:
+            <pre>CUSR0000SEFV, 2009-10-13, 67.3</pre>
+            Anzahl verschiedener series_id: 249927<br>
+            Größe der Datenbank auf der Festplatte: 1.01 GB <br>
+            Auslastung des Arbeitsspeichers: 681 MB<br>
+            Zeit für den Import: 30 Minuten
+        </p>
+    </div>
+</div>
+
+<h2>Abfrage</h2>
+<form action="/finance/get" method="get">
+    <div class="form-group">
+        <input type="text" name="series" id="series" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-success">Abrufen!</button>
+</form>
+
+<pre style="font-size: 8px; margin-top: 20px;">
+FEMRKTSD678FRBCLE
+</pre>

@@ -1,0 +1,53 @@
+<h1>SPARQL-Abfragen</h1>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Systeminformationen</div>
+    <div class="panel-body">
+        Triple in der Datenbank: 244 Millionen <br>
+        Größe der Datenbank auf der Festplatte: 19 GB <br>
+        Auslastung des Arbeitsspeichers: 3,5 GB <br>
+        Benötigte Zeit für das Importieren: 5 Stunden
+    </div>
+</div>
+
+<form action="/sparql/query" method="post">
+    <h2>Abfrage</h2>
+    <div class="form-group">
+        <textarea class="form-control" name="sparql" id="sparql" cols="30" rows="10"></textarea>
+    </div>
+    <button class="btn btn-success">Abfrage starten</button>
+</form>
+
+
+<pre style="font-size: 8px; margin-top: 20px;">
+SELECT * WHERE {
+  &lt;http://dbpedia.org/resource/Karlsruhe&gt; ?p ?o .
+}
+
+SELECT * WHERE {
+  ?film &lt;http://purl.org/dc/terms/subject&gt; &lt;http://dbpedia.org/resource/Category:Films_that_won_the_Best_Visual_Effects_Academy_Award&gt; .
+}
+
+SELECT ?name ?composer WHERE {
+  ?film &lt;http://purl.org/dc/terms/subject&gt; &lt;http://dbpedia.org/resource/Category:Best_Original_Music_Score_Academy_Award_winners&gt;  .
+  ?film &lt;http://dbpedia.org/property/name&gt; ?name .
+  ?film &lt;http://dbpedia.org/ontology/musicComposer&gt; ?composer .
+} ORDER BY ?composer
+
+SELECT ?s ?o WHERE {
+  ?s &lt;http://purl.org/dc/terms/subject&gt;	&lt;http://dbpedia.org/resource/Category:Presidents_of_the_United_States&gt; .
+  ?s &lt;http://dbpedia.org/ontology/vicePresident&gt; ?o.
+}
+
+SELECT ?s ?o WHERE {
+  ?s &lt;http://purl.org/dc/terms/subject&gt;	&lt;http://dbpedia.org/resource/Category:Presidents_of_the_United_States&gt; .
+  ?s &lt;http://dbpedia.org/ontology/vicePresident&gt; ?o.
+  ?s &lt;http://dbpedia.org/ontology/birthDate&gt; ?dob
+} ORDER BY ?dob
+
+SELECT * WHERE {
+      ?player &lt;http://dbpedia.org/property/currentclub&gt;  &lt;http://dbpedia.org/resource/FC_Bayern_Munich&gt;.
+      ?player &lt;http://dbpedia.org/property/clubnumber&gt; ?no .
+      ?player &lt;http://dbpedia.org/property/position&gt; ?position.
+} GROUP BY ?no ORDER BY ?no
+</pre>
